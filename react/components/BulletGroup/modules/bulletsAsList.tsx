@@ -1,21 +1,25 @@
 import React from "react";
-import { BulletsSchema, Link } from "../BulletTypes";
-
-type Bullet = {
-  image: string
-  titleBullet: string
-  link: Link
-}
+import { BulletsSchema } from "../BulletTypes";
+import Bullet from "../Bullet";
 
 export const getBulletsAsTSXList = (bullets: BulletsSchema) => {
-  bullets.map((bullet: Bullet, index) => {
+  return bullets.map((bullet: any, index) => {
+    console.log("Mi bullet es:", bullet);
+
     return (
-      <div key={index}>
-        <a href={bullet?.link?.url ? bullet?.link?.url : ""}>
-          <p>{bullet?.titleBullet}</p>
-          <p>{bullet?.image}</p>
-        </a>
-      </div>
-    )
-  })
+      <Bullet key={index} src={bullet.image} titleBullet={bullet.titleBullet}
+        link={
+          bullet.link ?
+          bullet.link :
+          {
+            url: "",
+            attributeNoFollow: false,
+            attributeTitle: "",
+            openNewTab: false,
+            newTab: false
+          }
+        }
+      />
+    );
+  });
 };

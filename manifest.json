@@ -3,7 +3,7 @@
   "name": "bullets-diagramation",
   "version": "0.0.1",
   "title": "Bullets Diagramation",
-  "description": "Es un contexto de elementos que rendirazarán los niveles inferiores de navegación dentro de una lista de bullets con imágenes",
+  "description": "Es un contexto de elementos que renderizarán los niveles inferiores de navegación dentro de una lista de bullets con imágenes",
   "builders": {
     "react": "3.x",
     "messages": "1.x",

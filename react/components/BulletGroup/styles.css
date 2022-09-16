@@ -1,0 +1,22 @@
+.bullet__item, .bullet__item--image {
+  width: 80px;
+}
+
+.bullet__item--link {
+  text-decoration: none;
+}
+
+.bullet__item {
+  margin-right: 15px;
+}
+
+.bullet__item--title {
+  color: magenta;
+}
+
+@media screen and (min-width: 760px) {
+  .bullet__item,
+  .bullet__item--image {
+    width: 100px;
+  }
+}
