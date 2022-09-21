@@ -12,10 +12,6 @@
     margin-right: 15px;
 }
 
-.bullet__item--title {
-    color: magenta;
-}
-
 @media screen and (min-width: 760px) {
 
     .bullet__item,
@@ -42,4 +38,15 @@
 
 .bullet__container::-webkit-scrollbar-thumb {
     background-color: yellow;
+}
+
+.bullet__group {
+    margin: 10px;
+}
+
+.bullet__group--title {
+    margin: auto;
+    width: 85%;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
