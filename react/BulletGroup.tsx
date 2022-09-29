@@ -1,3 +1,5 @@
-import BulletGroup from "./components/BulletGroup";
+// * Encapsulamiento del componente para ser protegido
 
-export default BulletGroup;
+import BulletGroup from "./components/BulletGroup";         // * Llamada del componente principal
+
+export default BulletGroup;                                 // ! Exportación obligatoria
