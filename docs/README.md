@@ -111,9 +111,10 @@ Si el proceso se ejecuta sin ningún error, se mostrará el siguiente mensaje: `
 Esto le permitirá ver los cambios aplicados en tiempo real, a través de la cuenta y el espacio de trabajo en el que está trabajando.
 
 ## Dependencies
-1. "vtex.checkout-resources"
-2. "vtex.order-manager"
-3. "vtex.product-context"
+1. "vtex.native-types"
+2. "vtex.list-context"
+3. "vtex.device-detector"
+4. "vtex.css-handles"
 
 ## Contributors
 1. José Luis Criollo
